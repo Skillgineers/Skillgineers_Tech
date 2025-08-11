@@ -1,0 +1,59 @@
+.portfolio {
+  padding: clamp(60px, 8vw, 100px) clamp(20px, 4vw, 60px);
+  background-color: #F9FAFB;
+  color: #1F2937;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: clamp(2rem, 4vw, 2.4rem);
+  margin-bottom: clamp(30px, 5vw, 40px);
+  color: #6366F1;
+  transition: color 0.3s ease;
+}
+
+.portfolio h2:hover {
+  color: #4F46E5;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(20px, 3vw, 30px);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  padding: clamp(15px, 2vw, 20px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 24px rgba(59, 130, 246, 0.3);
+}
+
+.project-card h3 {
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  color: #3B82F6;
+  margin-bottom: clamp(8px, 2vw, 10px);
+  transition: color 0.3s ease;
+}
+
+.project-card h3:hover {
+  color: #2563EB;
+}
+
+.project-card p {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: #4B5563;
+  line-height: 1.6;
+}

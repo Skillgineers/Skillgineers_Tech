@@ -1,0 +1,72 @@
+.services {
+  padding: clamp(60px, 8vw, 100px) clamp(20px, 4vw, 60px);
+  background-color: #f9fafb;
+  color: #1F2937;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: clamp(2rem, 4vw, 2.4rem);
+  margin-bottom: clamp(40px, 6vw, 50px);
+  color: #6366F1;
+  transition: color 0.3s ease;
+}
+
+.services h2:hover {
+  color: #2563EB;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(20px, 3vw, 30px);
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: clamp(16px, 2vw, 24px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  max-width: 380px;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.service-card h3 {
+  font-size: clamp(1.2rem, 3vw, 1.4rem);
+  margin-bottom: clamp(10px, 2vw, 12px);
+  color: #2563EB;
+  transition: color 0.3s ease;
+}
+
+.service-card h3:hover {
+  color: #1D4ED8;
+}
+
+.service-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.service-card li {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  padding: clamp(4px, 1.5vw, 6px) 0;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+  transition: color 0.2s ease;
+}
+
+.service-card li:hover {
+  color: #111827;
+}
